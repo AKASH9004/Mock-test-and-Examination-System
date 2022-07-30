@@ -21,7 +21,7 @@ public class allquestion extends javax.swing.JFrame {
         initComponents();
         try{
            // Connection con = ConnectionProvider.getCode();
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash@217");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash21");
             Statement st=con.createStatement(); 
             ResultSet rs =st.executeQuery("select * from question");
             jTable1.setModel(DbUtils.resultSetToTableModel(rs));
