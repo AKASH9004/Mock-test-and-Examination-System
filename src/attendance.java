@@ -112,7 +112,7 @@ public class attendance extends javax.swing.JFrame {
 //        
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con1 = DriverManager.getConnection("jdbc:mysql://localhost/online_exam","root","Akash@217");
+            con1 = DriverManager.getConnection("jdbc:mysql://localhost/online_exam","root","Akash21");
             insert = con1.prepareStatement("insert into attendence(name,class1,year,rollno)values(?,?,?,?)");
             insert.setString(1,name);
              insert.setString(2, class1);
