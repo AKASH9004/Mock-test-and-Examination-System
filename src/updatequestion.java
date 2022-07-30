@@ -249,7 +249,7 @@ PreparedStatement x;
 
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash@217");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash21");
             x = con.prepareStatement("update question set name=?,opt1=?,opt2=?,opt3=?,opt4=?,answer=? where id = ?");
             x.setString(1,name);
             x.setString(2,op1);
@@ -286,7 +286,7 @@ PreparedStatement x;
         
                     String id = txtid.getText();
                  try{
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash@217");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash21");
             Statement st=con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY); 
             ResultSet rs=st.executeQuery("select * from question where id = '"+id+"'");
             
