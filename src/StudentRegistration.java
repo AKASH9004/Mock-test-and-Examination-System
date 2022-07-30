@@ -369,7 +369,7 @@ public class StudentRegistration extends javax.swing.JFrame {
                 
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash@217");
+            con1 = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash21");
             insert = con1.prepareStatement("insert into registration(fullname,class1,year,rollno,phoneno,email,password) values(?,?,?,?,?,?,?)");
             insert.setString(1,fullname);
             insert.setString(2,class1);
