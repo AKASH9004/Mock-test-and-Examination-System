@@ -2,7 +2,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author AtikMujawar
+ * @author 
  */
 public class instruction extends javax.swing.JFrame {
  
