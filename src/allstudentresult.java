@@ -21,7 +21,7 @@ public class allstudentresult extends javax.swing.JFrame {
         initComponents();
         try{
            // Connection con = ConnectionProvider.getCode();
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash@217");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash21");
             Statement st=con.createStatement(); 
             ResultSet rs =st.executeQuery("select * from registration");
             jTable1.setAutoResizeMode(jTable1.AUTO_RESIZE_ALL_COLUMNS);
@@ -128,7 +128,7 @@ public class allstudentresult extends javax.swing.JFrame {
             marks=Integer.parseInt(jTextField1.getText());
             try{
            // Connection con = ConnectionProvider.getCode();
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash@217");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash21");
             Statement st=con.createStatement(); 
             ResultSet rs =st.executeQuery("select * from registration where marks >="+marks+"");
             jTable1.setAutoResizeMode(jTable1.AUTO_RESIZE_ALL_COLUMNS);
