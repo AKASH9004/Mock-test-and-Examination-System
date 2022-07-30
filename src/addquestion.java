@@ -26,7 +26,7 @@ public class addquestion extends javax.swing.JFrame {
         initComponents();
         try{
            // Connection con = ConnectionProvider.getCode();
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash@217");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash21");
             Statement st=con.createStatement(ResultSet.TYPE_SCROLL_SENSITIVE, ResultSet.CONCUR_READ_ONLY); 
             //Statement st=con.createStatement(); 
             ResultSet rs=st.executeQuery("select count(id) from question");
@@ -189,7 +189,7 @@ public class addquestion extends javax.swing.JFrame {
             try{
             // Connection con = ConnectionProvider.getCode();  
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash@217");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash21");
             PreparedStatement pst = con.prepareStatement("insert into question values(?,?,?,?,?,?,?)");
             pst.setString(1, id);
             pst.setString(2, name);      
