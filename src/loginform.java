@@ -197,7 +197,7 @@ public class loginform extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash@217");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/online_exam","root","Akash21");
             String sql = "select * from registration where Email=? and password=?";
             PreparedStatement pst = con.prepareStatement(sql);
             pst.setString(1, jTextField1.getText());
